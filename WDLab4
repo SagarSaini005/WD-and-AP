@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stimulating Dice using Random Function</title>
+	<style type="text/css">
+		p,ol{margin:0;
+		}
+		li{display: inline;margin-right: 10px;}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		var value;
+		document.writeln("<p>Random Number</p><ol>");
+		for (var i = 1; i <= 30; i++) {
+			value=Math.floor(1+Math.random()*6);
+			document.write("<li>"+value+"</li>");
+		}
+		document.writeln("</ol");
+			</script>
+
+</body>
+</html>
