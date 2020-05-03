@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Form validation using regex
+    </title>
+
+    <script>
+        function matchRegEx(pattern)
+        {
+            var re = new RegExp(pattern, "i");
+            var usrNme = document.getElementById('usrnme').value;
+            if (re.test(usrNme))
+            {
+                window.alert("Valid username");
+            }
+            else
+            {
+                window.alert("Invalid username");
+            }
+            return;
+        }
+        function start()
+        {
+            var sBtn = document.getElementById('submit-btn');
+            sBtn.addEventListener('click', 
+                                  function() 
+                                  {matchRegEx('E00')}, 
+                                  false);
+        }
+        window.addEventListener('load', start, false);
+    </script>
+
+    <style>
+        #usrnme
+        {
+            padding: 0.5% 5% 0.5% 1%;
+            font-size: 0.8vw;
+        }
+        #usrnme:focus
+        {
+            outline: none;
+        }
+        #submit-btn
+        {
+            padding: 0.5% 3% 0.5% 3%;
+            font-size: 0.8vw;
+            background-color: #888787;   
+            color: white;
+        }
+        #submit-btn:focus
+        {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2><center>Using RegEx to validate form</center></h2><hr><br>
+    <form id="reg-form">
+        <input id="usrnme" type="text" placeholder="Username" name="usrnme"/>
+        <button id="submit-btn" value="Submit" name="submit">Submit</button>
+    </form>
+</body>
