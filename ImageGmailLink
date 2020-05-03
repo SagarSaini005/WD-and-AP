@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <style>
+            body
+            {
+                margin: 2%;
+            }
+            li
+            {
+                list-style: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2><center>Using alt attribute in img tag</center></h2><hr><br>
+        <ul>
+            <li>
+                <a href="mailto:iiitsonepat@gmail.com">
+                    <img id="main-img" src="resources/iiits.png" height="100px" width="100px"/>
+                </a>
+            </li>
+            <br><br>
+            <li>
+                <img id="main-img" src="resources/google.png" alt="Google" height="100px" width="100px"/>
+            </li>
+            <br><br>
+            <li>
+                <a href="mailto:iiitsonepat@gmail.com">
+                    <img id="main-img" src="resources/iiits.png" alt="This is email link" height="100px" width="100px"/>
+                </a>
+            </li>
+        </ul>
+    </body>
+</html>
