@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript closure</title>
+	<script type="text/javascript">
+	function square(x)
+	{
+       result =x*x;
+       document.write(result);
+	}
+	for (var i=1;i<=50;i++) 
+	{
+		square(i);
+		document.write("</br>");
+	}
+
+	</script>
+</head>
+<body>
+<script type="text/javascript">
+	
+</script>
+</body>
+</html>
